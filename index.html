@@ -1,0 +1,1050 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/uiIcons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <title>Sell | Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="header_first_nav">
+            <span class="red_text">Signup as Customer</span> |
+            <span class="blue_text">Signup as Seller</span> |
+            <span>Sell With Us</span> |
+            <span>Help & Contact</span> |
+        </div>
+        <nav class="header_top_nav">
+            <div class="header_logo">
+                <img src="assets/images/logo.png" alt="Company Logo">
+            </div>
+            <!-- Mobile Menu Click -->
+            <i class="fi-rr-menu-burger mobile_menu_icon" onclick="OpenMobileMenu()"></i>
+            <i class="far fa-user-circle mobile_user_icon"></i>
+            <i class="fi-rr-search mobile_search_icon"></i>
+            <i class="fi-rr-shopping-cart mobile_cart_icon"></i>
+            <!-- End of Mobile Menu Click -->
+            <div class="header_search_widget">
+                <input type="text" placeholder="Search for a product">
+                <i class="fi-rr-search"></i>
+            </div>
+            <div class="header_contact">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <h4 class="blue_text">
+                        Need Help?
+                    </h4>
+                    <h4 class="gold_text">08101859035</h4>
+                </div>
+            </div>
+            <div class="header_buttons_widget">
+                <button class="gold_bg"> <i class="fi-rr-shopping-cart-check"></i> Start Selling Now</button>
+                <button class="green_bg"> <i class="fi-rr-shopping-cart-check"></i> Sell For Charity</button>
+            </div>
+        </nav>
+        <nav class="header_bottom_nav">
+            <i class="fi-rr-home"></i>
+            <div onmouseover="ShowCategory().hide()"> Computers & Accessories <i class="fas fa-angle-down">     </i> </div>
+            <div onmouseover="ShowCategory().hide()"> Phones & Accessories <i class="fas fa-angle-down">     </i> </div>
+            <div onmouseover="ShowCategory().hide()"> Groceries <i class="fas fa-angle-down"></i></div>
+
+            <div class="header_menu_nav_icons">
+                <i class="fi-rr-bell-ring"></i>
+                <i class="fi-rr-user"></i>
+                <span><i class="fi-rr-shopping-cart"></i> Cart <b>(0) </b></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Display -->
+        <div class="mobile_menu_display">
+            <div class="mobile_menu_display_main">
+                <i class="fi-rr-cross-small close_icon" onclick="CloseMobileMenu()"></i>
+                <div>
+                    <h4 class="blue_text">My SellMega Account</h4>
+                    <p class="small_font"><i class="fas fa-user-circle"></i>My Account</p>
+                    <p class="small_font"><i class="fas fa-truck"></i>Order</p>
+                    <p class="small_font"><i class="fi-rr-shopping-cart"></i>My Cart</p>
+                    <p class="small_font"><i class="fi-rr-marker"></i>Address Book</p>
+                    <p class="small_font"><i class="fi-rr-edit"></i>Edit Account</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Logout</p>
+                </div>
+                <hr>
+                <div>
+                    <h4 class="blue_text">
+                        Categories
+                        <i class="fas fa-arrow-right" style="margin-left: 20%;"></i>
+                    </h4>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Computers</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Phones</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Clothes</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Shoes</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Home Appliances</p>
+                </div>
+                    <hr>
+                <div>
+                    <p class="small_font"><i class="fi-rr-dollar"></i>Sell With Us</p>
+                    <p class="small_font"><i class="fab fa-whatsapp"></i>Help & Contact</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Menu Display -->
+    </header>
+
+    <!-- Main Web Body Display Widget-->
+
+    <main>
+        <!--Slider And Beside Info Widget-->
+        <div class="slider_area_plus_beside_info_widget">
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <img src="assets/images/banner/banner1.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/banner/banner2.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/banner/banner3.jpg" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <img src="assets/images/banner/banner4.jpg" style="width:100%">
+                </div>
+            </div>
+            <div style="text-align:center" class="dots-card">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+
+            <div class="slider_info_widget">
+                <img src="assets/images/banner/small-banner.jpg" alt="" class="small_beside_banner">
+                <div class="slider_newsletter_card">
+                    <img src="assets/images/banner/subscribe-newsletter-button.jpeg" alt="" >
+                    <h3>Subscribe to our Newsletter</h3>
+                </div>
+                <img src="assets/images/banner/small-banner.jpg" alt="" class="small_beside_banner">
+            </div>
+        </div>
+        <!-- End of Slider And Beside Info Widget-->
+
+        <!--External and Internal Navigators-->
+        <div class="navigators_container_flex">
+            <div class="each_navigators_buttons">
+                <h3><i class="fi-rr-shop"></i>Official Stores</h3>
+            </div>
+            <div class="each_navigators_buttons">
+                <h3>Groceries</h3>
+            </div>
+            <div class="each_navigators_buttons">
+                <h3><i class="fab fa-connectdevelop"></i>Our Affiliate</h3>
+            </div>
+            <div class="each_navigators_buttons">
+                <h3><i class="fas fa-mobile-alt"></i> Download App</h3>
+            </div>
+        </div>
+        <!-- End of External and Internal Navigators-->
+
+        <!-- Product Suggestions Widget (Top Pick)-->
+        <div class="product_suggestion_container">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>TOP PICKS</h3>
+                <h4>View All</h4>
+            </div>
+
+                <div class="main-carousel suggested_products_container_slider" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                    </div>
+                </div>
+            </div>
+        <!-- End of Product Suggestions Widget  (Top Pick)-->
+
+        <!-- Product Suggestions Widget (Latest Auction)-->
+        <div class="product_suggestion_container">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>LATEST AUCTIONS</h3>
+                <h4>View All</h4>
+            </div>
+            <div class="main-carousel suggested_products_container_slider" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                        <!-- Each Suggested Product Container-->
+                        <div class="carousel-cell">
+                            <div class="suggested_product_cont">
+                                <div class="suggested_product_img_cont">
+                                    <img src="assets/images/page-img/07.jpg" alt="">
+                                </div>
+                                <div class="suggested_product_info">
+                                    <h5 class="suggested_product_name">Apple Macbook Air </h5>
+                                    <h5 class="initial_price"><del><span>&#8358</span> 27,000.00</del></h5>
+                                    <h4 class="new_price"><span>&#8358</span> 27,000.00</h4>
+                                    <div class="review_star_bar">
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                        <i class="fi-rr-star"></i>
+                                    </div>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End of Each Suggested Product Container-->
+
+                    </div>
+    
+        </div>
+        <!-- End of Product Suggestions Widget  (Latest Auction)-->
+
+        <!-- Featured Category Display -->
+        <div class="categories_display_widget">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>Featured Categories</h3>
+            </div>
+            <div class="categories_display_widget_child">
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/bluetooth.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/speaker.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/tablets.png" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/telephone.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/camera.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/iphone11.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/battery.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/camera.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/speaker.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/gionee.jpg" alt="">
+                    <h3>Phone Accesories</h3>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of Featured Category Display -->
+
+        <!-- Advertisement Banner -->
+        <div class="advert_banner_widget">
+            <img src="assets/images/advert/advert-banner1.jpg" alt="">
+        </div>
+        <!-- End of Advertisement Banner-->
+
+        <!-- Available Rooms Widget -->
+        <div class="categories_display_widget">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>Available Rooms</h3>
+            </div>
+            <div class="categories_display_widget_child">
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/07.jpg" alt="">
+                    <h3>General Room </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/08.jpg" alt="">
+                    <h3>Celebrity Room </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/09.jpg" alt="">
+                    <h3>Charity Room </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/10.jpg" alt="">
+                    <h3>Government Room </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/11.jpg" alt="">
+                    <h3>General Room </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/page-img/12.jpg" alt="">
+                    <h3>General Room </h3>
+                </div>
+            </div>
+        </div>
+        <!-- End of Available Rooms Widget -->
+
+        <!-- Favorite Items Collection Widget -->
+        <div class="categories_display_widget">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart">    
+                    </i>Foreign Items you love! 
+                        <br> 
+                        
+                    <span class="under_text"> 
+                        Shop Collections You Love!
+                    </span>
+                </h3>
+            </div>
+            <div class="categories_display_widget_child">
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/shirt1.jpg" alt="">
+                    <h3> Phones </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/watch1.png" alt="">
+                    <h3> Clothings </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/shirt2.jpg" alt="">
+                    <h3> Shoes</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/black-shoe.png" alt="">
+                    <h3> Electrical devices </h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/shoe1.jpg" alt="">
+                    <h3> Men wears</h3>
+                </div>
+                <div class="each_cat_display_card">
+                    <img src="assets/images/products/shoe2.jpg" alt="">
+                    <h3> Women Wears </h3>
+                </div>
+            </div>
+
+            <div class="main-carousel collection_items_widget" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel-cell">
+                    <div class="collection_item_card">
+                        <img src="assets/images/products/bag1.jpg" alt="">
+                        <p class="floating_card"> -50% </p>
+                    </div>                           
+                </div>
+                <div class="carousel-cell">
+                    <div class="collection_item_card">
+                        <img src="assets/images/products/bag2.jpg" alt="">
+                        <p class="floating_card"> -50% </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="collection_item_card">
+                        <img src="assets/images/products/bag3.jpg" alt="">
+                        <p class="floating_card"> -50% </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="collection_item_card">
+                        <img src="assets/images/products/shoe1.jpg" alt="">
+                        <p class="floating_card"> -50% </p>
+                    </div>
+                </div>
+                <div class="carousel-cell">
+                    <div class="collection_item_card">
+                        <img src="assets/images/products/shoe2.jpg" alt="">
+                        <p class="floating_card"> -50% </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End of Favorite Collection Widget-->
+
+        <!-- Advertisement Banner -->
+        <div class="advert_banner_widget">
+            <img src="assets/images/advert/advert-banner2.jpg" alt="">
+        </div>
+        <!-- End of Advertisement Banner-->
+
+        <!-- Featured Groceries Display -->
+        <div class="categories_display_widget">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>Featured Groceries</h3>
+                <h4>View All</h4>
+            </div>
+            <div class="categories_display_widget_child">
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage1.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage2.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverages3.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage4.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage5.png" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage6.png" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage7.png" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage8.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage2.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+                <div class="each_cat_display_card five_column_card">
+                    <img src="assets/images/products/beverage1.jpg" alt="">
+                    <h3>Grocery</h3>
+                </div>
+            </div>
+            
+        </div>
+        <!-- End of Featured Groceries Display -->
+
+        <!-- Advertisement Banner -->
+        <div class="advert_banner_widget">
+            <img src="assets/images/advert/advert-banner1.jpg" alt="">
+        </div>
+        <!-- End of Advertisement Banner-->
+
+        <!-- Brands Stores  Display Widget-->
+            <div class="categories_display_widget">
+                <div class="suggest_bg_title">
+                    <h3><i class="far fa-heart"></i>Top Brands Official Stores</h3>
+                    <h4>View All</h4>
+                </div>
+                <div class="categories_display_widget_child">
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                    <div class="each_cat_display_card brands_card">
+                        <img src="assets/images/brands/apple.png" alt="">
+                    </div>
+                </div>
+            </div>
+        <!-- End of Brands Stores Display Widget-->
+
+        <!--  Second Featured Groceries Display -->
+        <div class="categories_display_widget">
+            <div class="suggest_bg_title">
+                <h3><i class="far fa-heart"></i>Featured Groceries</h3>
+                <h4>View All</h4>
+            </div>
+            <div class="main-carousel collection_items_widget" data-flickity='{ "cellAlign": "left", "contain": true }'>
+                <div class="carousel-cell collection_item_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <p class="floating_card">Lagos Only</p>
+                    <p class="bottom_floating_card">Free Delivery</p>
+                </div>
+                <div class="carousel-cell collection_item_card">
+                    <img src="assets/images/products/bag1.jpg" alt="">
+                    <p class="floating_card">Lagos Only</p>
+                    <p class="bottom_floating_card">Free Delivery</p>
+                </div>
+                <div class="carousel-cell collection_item_card">
+                    <img src="assets/images/products/bag2.jpg" alt="">
+                    <p class="floating_card">Lagos Only</p>
+                    <p class="bottom_floating_card">Free Delivery</p>
+                </div>
+                <div class="carousel-cell collection_item_card">
+                    <img src="assets/images/products/iphone11.jpg" alt="">
+                    <p class="floating_card">Lagos Only</p>
+                    <p class="bottom_floating_card">Free Delivery</p>
+                </div>
+                <div class="carousel-cell collection_item_card">
+                    <img src="assets/images/products/shoe1.jpg" alt="">
+                    <p class="floating_card">Lagos Only</p>
+                    <p class="bottom_floating_card">Free Delivery</p>
+                </div>
+            </div>
+            <div class="categories_display_widget_child">
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+                <!-- Category Card -->
+                <div class="each_cat_display_card four_column_card">
+                    <img src="assets/images/page-img/phone.svg" alt="">
+                    <h5 class="grey_info_text"><span>Sold By:  </span> Daniel Adewale </h5>
+                    <hr>
+                    <h3 class="blue_text">New Iphone 13, UK</h3>
+                    <div>
+                        <span class="red_text"><del><span>&#8358</span> 25,000</del></span>
+                        <span class="blue_text"><span>  &#8358</span> 23,000</span>
+                    </div>
+                    <div class="review_star_bar">
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                        <i class="fi-rr-star"></i>
+                    </div>
+                    <button>Buy Now</button>
+                </div>
+                <!-- End of Category Card -->
+            </div>
+            
+        </div>
+        <!-- End of Second Featured Groceries Display -->
+
+        <!-- Company About Widget -->
+        <div class="company_index_about_card">
+            <h3 class="blue_text">
+                ONLINE SHOPPING ON SELLMEGA.COM FOR USED & NEW ELECTRONICS - THE NO. 1 ONLINE NIGERIA AUCTION SITE
+            </h3>
+            <p class="grey_info_text">Sellmega.com is the first Nigerian ecommerce marketplace that focuses on the public or private auction of used, preowned and new electronic items such as watches, phones, laptops, accessories, electronic gadgets to users/customers and other public audience for charity.
+
+                Online shopping via auction and bulk order has never been easier than using our useful filters to find your desired product, adding it to cart and getting prompt delivery in a very short space of time. Sellmega.com uses an escrow payment pattern that ensures buyer receives the products purchased before seller is paid. What's more, at sellmega.com, customer satisfaction is our topmost concern and priority; we make shopping online fun, affordable and stress free.
+            </p>
+        </div>
+        <!-- End of Company Widget -->
+
+        <!-- Footer Area -->
+        <footer>
+            <div class="footer_outer_card">
+                <h4><i class="far fa-envelope"></i>Subscribe To Our Newsletter</h4>
+                <div class="header_search_widget">
+                    <input type="text" placeholder="Enter Email Address">
+                    <i class="fi-rr-arrow-right"></i>
+                </div>
+                <button>I am a Male</button>
+                <button>I am a Female</button>
+            </div>
+            <div class="footer_content">
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Let us help you</h3>
+                    <div>
+                        <p>Contact Us</p> 
+                        <p>How to Buy on Sellmega.com</p> 
+                        <p>How to Sell on Sellmega.com</p> 
+                        <p>How to Auction on Sellmega.com</p> 
+                        <p>How to Place Bid on Sellmega.com</p> 
+                        <p>How to Register Shipment Aaddress</p> 
+                        <p>How to Sell for Charity</p> 
+                        <p>How to Upload Documents</p> 
+                        <p>How It Works</p> 
+                        <p>Return Policy</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Turn your passion into a business.</h3>
+                    <button><i class="fi-rr-shopping-cart-check"></i>Start selling now!</button>
+                    <h3 class="gold_text"> Customer Service</h3>
+                    <div>
+                        <p>SellMega Blog</p> 
+                        <p>Contact us</p> 
+                        <p>Refunds</p> 
+                        <p>Site Map</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Get to know us</h3>
+                    <div>
+                        <p>Contact Us</p> 
+                        <p>About Us</p> 
+                        <p>What Customers Say About Us</p> 
+                        <p>Careers</p> 
+                        <p>Delivery Information</p> 
+                        <p>Terms and Conditions</p> 
+                        <p>Privacy Policy</p> 
+                        <p>Sellmega for Charity</p> 
+                        <p>How It Works</p> 
+                        <p>Sell for Charity</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Join Us on</h3>
+                    <div class="social_icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="gold_text"> Payment methods & Delivey partner</h3>
+                    <div class="payment_icons">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_outer_card">
+                <h5>Copyright © 2021 Sellmega.com. All Rights Reserved.</h5>
+
+                <div>
+                    <div>
+                        <button> <i class="fab fa-facebook-square"></i>     Like</button>
+                        <button>Share</button>
+                        <span>100 people liked this. </span>
+                        <span class="blue_text">SignUp</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area -->
+
+        <!-- Bottom Navigations -->
+        <div class="bottom_navigation">
+            <i class="fi-rr-home"></i>
+            <i class="fi-rr-shopping-cart"></i>
+            <i class="fi-rr-shop"></i>
+            <i class="fi-rr-user"></i>
+            <i class="fi-rr-menu-dots"></i>
+        </div>
+        <!-- End of Bottom Navigations -->
+
+        <!-- Modal Categories Menu DropDown -->
+            <div class="page_category_menu_dropdown_main" onmouseover="ShowCategory()" onmouseout="HideCategory()">
+                <div class="page_category_left">
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                    <div class="each_main_category_card">
+                        <h4>Mobile Phones</h4>
+                        <p>Android Phone</p>
+                        <p>IOS Phone</p>
+                        <p>Windows Phone</p>
+                    </div>
+                </div>
+                <div class="page_category_right">
+                    <img src="assets/images/banner/c1902a644ab125490c5ed36a166a5457.jpg" alt="">
+                </div>
+            </div>
+        <!-- End of Modal Categories Menu DropDown -->
+
+    </main>
+
+    <!--End of Main Web Body Display Widget-->
+</body>
+
+<script src="assets/js/index.js"></script>
+<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+<script src="assets/js/flickity-docs.min.js"></script>
+</html>

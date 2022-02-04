@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/all.css">
+    <link rel="stylesheet" href="assets/css/uiIcons.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <title>SellMega | WishList </title>
+</head>
+<body>
+    <header>
+        <div class="header_first_nav">
+            <span class="red_text">Signup as Customer</span> |
+            <span class="blue_text">Signup as Seller</span> |
+            <span>Sell With Us</span> |
+            <span>Help & Contact</span> |
+        </div>
+        <nav class="header_top_nav">
+            <div class="header_logo">
+                <img src="assets/images/logo.png" alt="Company Logo">
+            </div>
+            <!-- Mobile Menu Click -->
+            <i class="fi-rr-menu-burger mobile_menu_icon" onclick="OpenMobileMenu()"></i>
+            <i class="far fa-user-circle mobile_user_icon"></i>
+            <i class="fi-rr-search mobile_search_icon"></i>
+            <i class="fi-rr-shopping-cart mobile_cart_icon"></i>
+            <!-- End of Mobile Menu Click -->
+            <div class="header_search_widget">
+                <input type="text" placeholder="Search for a product">
+                <i class="fi-rr-search"></i>
+            </div>
+            <div class="header_contact">
+                <i class="fab fa-whatsapp"></i>
+                <div>
+                    <h4 class="blue_text">
+                        Need Help?
+                    </h4>
+                    <h4 class="gold_text">08101859035</h4>
+                </div>
+            </div>
+            <div class="header_buttons_widget">
+                <button class="gold_bg"> <i class="fi-rr-shopping-cart-check"></i> Start Selling Now</button>
+                <button class="green_bg"> <i class="fi-rr-shopping-cart-check"></i> Sell For Charity</button>
+            </div>
+        </nav>
+        <nav class="header_bottom_nav">
+            <i class="fi-rr-home"></i>
+            <div onmouseover="ShowCategory().hide()"> Computers & Accessories <i class="fas fa-angle-down">     </i> </div>
+            <div onmouseover="ShowCategory().hide()"> Phones & Accessories <i class="fas fa-angle-down">     </i> </div>
+            <div onmouseover="ShowCategory().hide()"> Groceries <i class="fas fa-angle-down"></i></div>
+
+            <div class="header_menu_nav_icons">
+                <i class="fi-rr-bell-ring"></i>
+                <i class="fi-rr-user"></i>
+                <span><i class="fi-rr-shopping-cart"></i> Cart <b>(0) </b></span>
+            </div>
+        </nav>
+
+        <!-- Mobile Menu Display -->
+        <div class="mobile_menu_display">
+            <div class="mobile_menu_display_main">
+                <i class="fi-rr-cross-small close_icon" onclick="CloseMobileMenu()"></i>
+                <div>
+                    <h4 class="blue_text">My SellMega Account</h4>
+                    <p class="small_font"><i class="fas fa-user-circle"></i>My Account</p>
+                    <p class="small_font"><i class="fas fa-truck"></i>Order</p>
+                    <p class="small_font"><i class="fi-rr-shopping-cart"></i>My Cart</p>
+                    <p class="small_font"><i class="fi-rr-marker"></i>Address Book</p>
+                    <p class="small_font"><i class="fi-rr-edit"></i>Edit Account</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Logout</p>
+                </div>
+                <hr>
+                <div>
+                    <h4 class="blue_text">
+                        Categories
+                        <i class="fas fa-arrow-right" style="margin-left: 20%;"></i>
+                    </h4>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Computers</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Phones</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Clothes</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Shoes</p>
+                    <p class="small_font"><i class="fas fa-toggle-off"></i>Home Appliances</p>
+                </div>
+                    <hr>
+                <div>
+                    <p class="small_font"><i class="fi-rr-dollar"></i>Sell With Us</p>
+                    <p class="small_font"><i class="fab fa-whatsapp"></i>Help & Contact</p>
+                </div>
+            </div>
+        </div>
+        <!-- End of Mobile Menu Display -->
+    </header>
+
+    <!-- Main Web Body Display Widget-->
+
+    <main>
+        <!-- Page and Route Directory Widget -->
+            <div class="directory_widget">
+                <span>Home</span>
+                /
+                <span>WishList</span>
+            </div>
+        <!-- End of Page and Route Directory Widget -->
+
+        <!-- Seller Page Header -->
+        <div class="seller_page_header">
+            <div class="seller_page_header_main_content">
+                <h2 class="active_class" style="border:none; color:#0C628E"><i class="fi-rr-heart red_text"></i>        My WishList (2)</h2>
+            </div>
+        </div>
+        <!-- End of Seller Page Header -->
+
+        <!-- Cart Item Header-->
+        <div class="cart_item_header">
+            <h4 class="item_name_img_card">Item</h4>
+            <h4 class="quantity centered_text">Quantity</h4>
+            <h4 class="price centered_text">Unit Price(&#8358)</h4>
+            <h4 class="price centered_text">Sub Total(&#8358)</h4>
+        </div>
+        <!--End of Cart Item Header -->
+        
+        <!-- Cart Items Card -->
+        
+        <div class="cart_item_container_card">
+            <i class="fi-rr-shopping-cart-add to_wishlist" title="Move to Cart"></i>
+            <i class="fi-rr-cross delete_cart"></i>
+            <div class="item_name_img_card">
+                <img src="assets/images/products/bag1.jpg" alt="">
+                <div class="item_name_ext_info">
+                    <h5 class="grey_text">Seller: KPIE Technology</h5>
+                    <h5 class="cart_product_name">Brand Female Bag Brand Female Bag Brand Female Bag Brand Female Bag  Brand Female Bag  Brand Female Bag  </h5>
+                    <h6 class="blue_text">Extra Information Below</h6>
+                </div>
+            </div>
+            <div class="quantity">
+                <input type="number" value="1">
+            </div>
+            <div class="price">
+                <h4 class="centered_text blue_text"> 2,500.00</h4>
+                <p class=" centered_text small_font"><del>1700.00</del></p>
+            </div>
+            <div class="price">
+                <h4 class="centered_text red_text"> 5,500.00</h4>
+            </div>
+        </div>
+        <!-- End of Cart Items Card -->
+
+        <!-- Cart Items Card -->
+        
+        <div class="cart_item_container_card">
+            <i class="fi-rr-shopping-cart-add to_wishlist" title="Move to Cart"></i>
+            <i class="fi-rr-cross delete_cart"></i>
+            <div class="item_name_img_card">
+                <img src="assets/images/products/bag1.jpg" alt="">
+                <div class="item_name_ext_info">
+                    <h5 class="grey_text">Seller: KPIE Technology</h5>
+                    <h5 class="cart_product_name">Brand Female Bag Brand Female Bag Brand Female Bag Brand Female Bag  Brand Female Bag  Brand Female Bag  </h5>
+                    <h6 class="blue_text">Extra Information Below</h6>
+                </div>
+            </div>
+            <div class="quantity">
+                <input type="number" value="1">
+            </div>
+            <div class="price">
+                <h4 class="centered_text blue_text"> 2,500.00</h4>
+                <p class=" centered_text small_font"><del>1700.00</del></p>
+            </div>
+            <div class="price">
+                <h4 class="centered_text red_text"> 5,500.00</h4>
+            </div>
+        </div>
+        <!-- End of Cart Items Card -->
+        
+           
+        <!-- End of Main Category Widget-->
+
+    
+
+        <!-- Footer Area -->
+        <footer>
+            <div class="footer_outer_card">
+                <h4><i class="far fa-envelope"></i>Subscribe To Our Newsletter</h4>
+                <div class="header_search_widget">
+                    <input type="text" placeholder="Enter Email Address">
+                    <i class="fi-rr-arrow-right"></i>
+                </div>
+                <button>I am a Male</button>
+                <button>I am a Female</button>
+            </div>
+            <div class="footer_content">
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Let us help you</h3>
+                    <div>
+                        <p>Contact Us</p> 
+                        <p>How to Buy on Sellmega.com</p> 
+                        <p>How to Sell on Sellmega.com</p> 
+                        <p>How to Auction on Sellmega.com</p> 
+                        <p>How to Place Bid on Sellmega.com</p> 
+                        <p>How to Register Shipment Aaddress</p> 
+                        <p>How to Sell for Charity</p> 
+                        <p>How to Upload Documents</p> 
+                        <p>How It Works</p> 
+                        <p>Return Policy</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Turn your passion into a business.</h3>
+                    <button><i class="fi-rr-shopping-cart-check"></i>Start selling now!</button>
+                    <h3 class="gold_text"> Customer Service</h3>
+                    <div>
+                        <p>SellMega Blog</p> 
+                        <p>Contact us</p> 
+                        <p>Refunds</p> 
+                        <p>Site Map</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Get to know us</h3>
+                    <div>
+                        <p>Contact Us</p> 
+                        <p>About Us</p> 
+                        <p>What Customers Say About Us</p> 
+                        <p>Careers</p> 
+                        <p>Delivery Information</p> 
+                        <p>Terms and Conditions</p> 
+                        <p>Privacy Policy</p> 
+                        <p>Sellmega for Charity</p> 
+                        <p>How It Works</p> 
+                        <p>Sell for Charity</p> 
+                    </div>
+                </div>
+                <div class="footer_content_child">
+                    <h3 class="gold_text"> Join Us on</h3>
+                    <div class="social_icons">
+                        <i class="fab fa-facebook"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                        <i class="fab fa-linkedin"></i>
+                        <i class="fab fa-youtube"></i>
+                    </div>
+                    <h3 class="gold_text"> Payment methods & Delivey partner</h3>
+                    <div class="payment_icons">
+                        <i class="fab fa-cc-mastercard"></i>
+                        <i class="fab fa-cc-visa"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_outer_card">
+                <h5>Copyright © 2021 Sellmega.com. All Rights Reserved.</h5>
+
+                <div>
+                    <div>
+                        <button> <i class="fab fa-facebook-square"></i>     Like</button>
+                        <button>Share</button>
+                        <span>100 people liked this. </span>
+                        <span class="blue_text">SignUp</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- Footer Area -->
+
+         <!-- Bottom Navigations -->
+        <div class="bottom_navigation">
+            <i class="fi-rr-home"></i>
+            <i class="fi-rr-shopping-cart"></i>
+            <i class="fi-rr-shop"></i>
+            <i class="fi-rr-user"></i>
+            <i class="fi-rr-menu-dots"></i>
+        </div>
+        <!-- End of Bottom Navigations -->
+
+            
+
+    </main>
+
+    
+    <!--End of Main Web Body Display Widget-->
+
+    
+
+
+</body>
+
+<script src="assets/js/index.js">
+</script>
+</html>
